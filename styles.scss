@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+  height: 40px;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  margin: 20px 40px 0 40px;
+  font-size: 20px;
+}
+
+.navbar ul li:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 80px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #BC002D;
+  animation: fadein 3s;
+  animation: moving 3s;
+  position: relative;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes moving {
+  from {top: -100px;}
+    to {top: 0px;}
+}
+
+.home-buttons {
+  margin: 100px 25vw 0 25vw;
+  width: 50vw;
+}
+
+.home-buttons ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.home-buttons ul li {
+  height: 40px;
+  width: 200px;
+  border: 2px solid #BC002D;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.home-buttons ul li p {
+  margin: 8px -4px 0 0;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.mountain {
+  width: 100%;
+  text-align: center;
+}
+
+.mountain img {
+  margin-top: 30px;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.play-now {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  text-align: right;
+}
+
+.play-now p {
+  margin: 0 50px 30px 0;
+  font-size: 30px;
+  color: #BC002D;
+  letter-spacing: 2px;
+}
